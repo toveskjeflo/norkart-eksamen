@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestill rollups & messevegger</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="site-logo"
+           src="https://assets.codepen.io/15301001/Norkartlogo_hvit_ny.png"
+           alt="Norkart logo">
+      <h1>Bestill rollups & messevegger</h1>
+    </div>
+  </header>
+
+  <main class="products-wrapper" id="bestillingssystem"></main>
+
+  <!-- Modal -->
+  <div class="modal" id="order-modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <h2>Handlekurv / Bestillingsskjema</h2>
+
+      <div id="cart-items"></div>
+      <div class="total-price" id="total-price">Total: 0 kr</div>
+
+      <form id="order-form">
+        <!-- (resten av skjemaet ditt er helt korrekt – behold det) -->
+      </form>
+    </div>
+  </div>
+
+  <!-- JS (VIKTIG: nederst) -->
+  <script src="js/main.js"></script>
+</body>
+</html>
