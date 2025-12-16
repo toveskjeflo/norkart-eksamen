@@ -2,32 +2,32 @@ const mount = document.getElementById("bestillingssystem");
 
 // Produkter
 const products = [
-  {id:"r1", name:"Rollup Komtek", type:"Rollup", price:250, img:"images/rollup1.jpg", totalStock:5, stock:1, lastReturn:"2025-11-10"},
-  {id:"r2", name:"Rollup 2", type:"Rollup", price:250, img:"images/rollup2.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r3", name:"Rollup 3", type:"Rollup", price:250, img:"images/rollup3.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
-  {id:"r4", name:"Rollup 4", type:"Rollup", price:250, img:"images/rollup4.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r5", name:"Rollup 5", type:"Rollup", price:250, img:"images/rollup5.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
-  {id:"r6", name:"Rollup 6", type:"Rollup", price:250, img:"images/rollup6.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r7", name:"Rollup 7", type:"Rollup", price:250, img:"images/rollup7.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
-  {id:"r8", name:"Rollup 8", type:"Rollup", price:250, img:"images/rollup8.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r9", name:"Rollup 9", type:"Rollup", price:250, img:"images/rollup9.jpg", totalStock:3, stock:0, lastReturn:"2025-11-10"},
-  {id:"r10", name:"Rollup 10", type:"Rollup", price:250, img:"images/rollup10.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r11", name:"Rollup 11", type:"Rollup", price:250, img:"images/rollup11.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
-  {id:"r12", name:"Rollup 12", type:"Rollup", price:250, img:"images/rollup12.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r13", name:"Rollup 13", type:"Rollup", price:250, img:"images/rollup13.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
-  {id:"r14", name:"Rollup 14", type:"Rollup", price:250, img:"images/rollup14.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"r15", name:"Rollup 15", type:"Rollup", price:250, img:"images/rollup15.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
-  {id:"r16", name:"Rollup 16", type:"Rollup", price:250, img:"images/rollup16.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
-  {id:"m1", name:"Messevegg 1", type:"Messevegg", price:250, img:"images/messe1.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
-  {id:"m2", name:"Messevegg 2", type:"Messevegg", price:250, img:"images/messe2.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
-  {id:"m3", name:"Messevegg 3", type:"Messevegg", price:250, img:"images/messe3.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
-  {id:"m4", name:"Messevegg 4", type:"Messevegg", price:250, img:"images/messe4.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
-  {id:"m5", name:"Messevegg 5", type:"Messevegg", price:250, img:"images/messe5.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
-  {id:"m6", name:"Messevegg 6", type:"Messevegg", price:250, img:"images/messe6.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
-  {id:"m7", name:"Messevegg 7", type:"Messevegg", price:250, img:"images/messe7.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
-  {id:"m8", name:"Messevegg 8", type:"Messevegg", price:250, img:"images/messe8.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
-  {id:"m9", name:"Messevegg 9", type:"Messevegg", price:250, img:"images/messe9.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
-  {id:"m10", name:"Messevegg 10", type:"Messevegg", price:250, img:"images/messe10.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"}
+  {id:"r1", name:"Rollup Komtek", type:"Rollup", price:1, img:"images/rollup1.jpg", totalStock:5, stock:1, lastReturn:"2025-11-10"},
+  {id:"r2", name:"Rollup Komtek eGebyr", type:"Rollup", price:1, img:"images/rollup2.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r3", name:"Rollup Komtek Iar", type:"Rollup", price:1, img:"images/rollup3.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
+  {id:"r4", name:"Rollup Komtek eSkatt", type:"Rollup", price:1, img:"images/rollup4.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r5", name:"Rollup Automatikken eSkatt", type:"Rollup", price:1, img:"images/rollup5.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
+  {id:"r6", name:"Rollup eByggsøk", type:"Rollup", price:1, img:"images/rollup6.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r7", name:"Rollup Brannforebygging 1", type:"Rollup", price:1, img:"images/rollup7.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
+  {id:"r8", name:"Rollup Digital Byggesøknad", type:"Rollup", price:1, img:"images/rollup8.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r9", name:"Rollup Brannforebygging 2", type:"Rollup", price:1, img:"images/rollup9.jpg", totalStock:3, stock:0, lastReturn:"2025-11-10"},
+  {id:"r10", name:"Rollup Mitt innspill", type:"Rollup", price:1, img:"images/rollup10.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r11", name:"Rollup Tømmeregistrering", type:"Rollup", price:1, img:"images/rollup11.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
+  {id:"r12", name:"Rollup Oppmåling felt", type:"Rollup", price:1, img:"images/rollup12.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r13", name:"Rollup Tilsyn avløp", type:"Rollup", price:1, img:"images/rollup13.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
+  {id:"r14", name:"Rollup Matrikkelmelding", type:"Rollup", price:1, img:"images/rollup14.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"r15", name:"Rollup Komtek eVA", type:"Rollup", price:1, img:"images/rollup15.jpg", totalStock:3, stock:3, lastReturn:"2025-11-10"},
+  {id:"r16", name:"Rollup Planvask", type:"Rollup", price:1, img:"images/rollup16.jpg", totalStock:2, stock:2, lastReturn:"2025-11-12"},
+  {id:"m1", name:"Messevegg Mitt innspill", type:"Messevegg", price:1, img:"images/messe1.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
+  {id:"m2", name:"Messevegg Digital byggsak", type:"Messevegg", price:1, img:"images/messe2.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
+  {id:"m3", name:"Messevegg Eiendomsinnsyn", type:"Messevegg", price:1, img:"images/messe3.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
+  {id:"m4", name:"Messevegg Karriere", type:"Messevegg", price:1, img:"images/messe4.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
+  {id:"m5", name:"Messevegg Kommunekart", type:"Messevegg", price:1, img:"images/messe5.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
+  {id:"m6", name:"Messevegg Arealplan", type:"Messevegg", price:1, img:"images/messe6.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
+  {id:"m7", name:"Messevegg Sammen skaper vi 300cm", type:"Messevegg", price:1, img:"images/messe7.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
+  {id:"m8", name:"Messevegg Sammen skaper vi 240cm", type:"Messevegg", price:1, img:"images/messe8.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"},
+  {id:"m9", name:"Messevegg FME", type:"Messevegg", price:1, img:"images/messe9.jpg", totalStock:2, stock:2, lastReturn:"2025-11-15"},
+  {id:"m10", name:"Messevegg Komtek", type:"Messevegg", price:1, img:"images/messe10.jpg", totalStock:1, stock:1, lastReturn:"2025-11-16"}
 ];
 
 let cart = [];
@@ -124,9 +124,9 @@ function renderCart() {
 }
 
 function calculateTotal(cart, isOslo = true) {
-  const itemPrice = 250;
-  const adminFee = 150;
-  const shipping = isOslo ? 1250 : 2000;
+  const itemPrice = 1;
+  const adminFee = 1;
+  const shipping = isOslo ? 1 : 1;
   return cart.length * itemPrice + adminFee + shipping;
 }
 

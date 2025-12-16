@@ -4,97 +4,24 @@
   <meta charset="UTF-8">
   <title>Norkart messesystemer</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
+
 <body>
 <header class="site-header">
   <div class="site-header-inner">
     <img class="site-logo" src="https://assets.codepen.io/15301001/Norkartlogo_hvit_ny.png" alt="Norkart logo">
-    <h1>Bestill rollups & messevegger</h1>
+    <h1>Velkommen til Norkart messesystemer</h1>
   </div>
 </header>
 
-<main class="products-wrapper" id="bestillingssystem"></main>
+<main style="text-align:center; padding:40px;">
+  <h2>Bestill rollups, bannere og messevegger</h2>
+  <p>Klikk under for å gå til bestillingssiden.</p>
 
-<!-- Modal / Bestillingsskjema -->
-<div class="modal" id="order-modal" aria-hidden="true">
-  <div class="modal-dialog">
-    <h2>Handlekurv / Bestillingsskjema</h2>
-
-    <!-- Produkter i handlekurv -->
-    <div id="cart-items"></div>
-
-    <!-- Totalpris -->
-    <div class="total-price" id="total-price">Total: 0 kr</div>
-
-    <!-- Bestillingsskjema -->
-    <form id="order-form">
-      <label for="name">Navn:</label>
-      <input type="text" id="name" name="name" required>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="email">E-post:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Telefon:</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="pickup">Hentedato:</label>
-          <input type="date" id="pickup" name="pickup" required>
-        </div>
-        <div class="form-group">
-          <label for="return">Returdato:</label>
-          <input type="date" id="return" name="return" required>
-        </div>
-      </div>
-
-      <label>Kontaktperson på eventet/hotellet:
-        <input type="text" name="contactName" required>
-      </label>
-      <label>Kontaktperson tlf:
-        <input type="tel" name="contactPhone" required>
-      </label>
-
-      <label>Fraktområde:
-        <select id="shipping">
-          <option value="oslo" selected>Oslo og omegn</option>
-          <option value="other">Utenfor Oslo</option>
-        </select>
-      </label>
-
-      <button type="submit" class="btn primary">Send bestilling</button>
-      <button type="button" class="btn ghost" id="close-modal">Avbryt</button>
-    </form>
-  </div>
-</div>
-<!-- AI Chatbot Button -->
-<button id="open-chat" class="btn primary" style="position:fixed;bottom:20px;right:20px;z-index:100;">
-  Chat med AI
-</button>
-
-<!-- AI Chatbot Modal -->
-<div class="modal" id="chat-modal" aria-hidden="true">
-  <div class="modal-dialog">
-    <h2>AI-assistent</h2>
-
-    <label>
-      Still et spørsmål:
-      <input type="text" id="chat-input">
-    </label>
-
-    <button id="chat-send" class="btn primary">Send</button>
-    <button id="close-chat" class="btn ghost">Lukk</button>
-
-    <div id="chat-response" style="margin-top:12px;"></div>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
+  <a href="produkter.html" class="btn primary" style="font-size:1.2rem;">
+    Gå til bestillingsside →
+  </a>
+</main>
 
 </body>
+</html>
