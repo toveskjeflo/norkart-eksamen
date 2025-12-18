@@ -31,7 +31,8 @@ const products = [
 ];
 
 let cart = [];
-let waitlist = {}; // lagrer venteliste pr produkt-id
+let waitlist = {};
+let currentFilter = null;
 
 const modal = document.getElementById("order-modal");
 const closeModal = document.getElementById("close-modal");
@@ -52,6 +53,7 @@ function addBusinessDays(dateString, daysToAdd) {
 }
 
 function renderProducts(filter = null) {
+  currentFilter = filter;
   mount.innerHTML = `
     <div class="products-container">
       <div class="topbar">
@@ -117,7 +119,7 @@ function renderCart() {
     btn.onclick = () => {
       const idx = parseInt(btn.dataset.idx);
       cart.splice(idx, 1);
-      renderProducts();
+      renderProducts(currentFilter);
       renderCart();
     };
   });
@@ -136,7 +138,7 @@ mount.addEventListener("click", e => {
     const id = e.target.dataset.id;
     const prod = products.find(p => p.id === id);
     cart.push(prod);
-    renderProducts();
+    renderProducts(currentFilter);
     renderCart();
   }
 
@@ -170,7 +172,7 @@ form.addEventListener("submit", e => {
   e.preventDefault();
   alert("Bestilling sendt! (Backend må håndtere e-post/Trello)");
   cart = [];
-  renderProducts();
+  renderProducts(currentFilter);
   modal.setAttribute("aria-hidden", "true");
 });
 
